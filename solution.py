@@ -14,4 +14,4 @@ def solution(x_success: int,
     # Не меняйте название функции и её аргументы
     pz = ttest_ind(x_success, y_success, equal_var=False, alternative="greater").pvalue
     p = ttest_ind(x_success, y_success, equal_var=False, alternative="greater").pvalue
-    return p > 0.04 and p > pz # Ваш ответ, True или False
+    return p < 0.04 and p > pz # Ваш ответ, True или False
