@@ -13,4 +13,4 @@ def solution(x_success: int,
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
     #return ttest_ind(x_success/x_cnt, y_success/y_cnt, equal_var=False, alternative="greater").pvalue < 0.04 # Ваш ответ, True или False
-    return mannwhitneyu(x_success/x_cnt, y_success/y_cnt, alternative="less").pvalue < 0.04 # Ваш ответ, True или False
+    return mannwhitneyu(x_success/x_cnt, y_success/y_cnt, alternative="greater").pvalue < 0.04 # Ваш ответ, True или False
